@@ -1,0 +1,40 @@
+Que se passera-t-il dans ton cas actuel ?
+Si tu as déjà ajouté un UNIQUE KEY sur courriel (comme suggéré), une personne ne pourra pas envoyer un deuxième message avec le même courriel, même si le numero et le message sont différents. Elle sera bloquée au moment de l’insertion avec une erreur SQL.
+Si tu n’as pas d’index unique, les deux messages seront acceptés, créant des doublons potentiels.
+Recommandation pour "PulseTech"
+Je te conseille Option 1 : garde un UNIQUE sur courriel, mais ajoute un champ sujet ou demande_id pour permettre à un utilisateur d’envoyer plusieurs messages avec le même email (par exemple, pour différents services). Cela équilibre la prévention des doublons et la flexibilité pour tes clients.
+
+Exemple de formulaire ajusté
+Ajoute un champ "Sujet" dans ton formulaire :
+
+html
+
+Réduire
+
+Envelopper
+
+Copier
+<label for="sujet">Sujet de la demande :</label>
+<select id="sujet" name="sujet" required>
+  <option value="site">Création de site web</option>
+  <option value="software">Développement logiciel</option>
+  <option value="maintenance">Maintenance informatique</option>
+  <option value="repair">Réparation de téléphone</option>
+  <option value="autre">Autre</option>
+</select>
+Et ajuste ta table :
+
+sql
+
+Réduire
+
+Envelopper
+
+Copier
+ALTER TABLE ton_table
+ADD sujet VARCHAR(100) NOT NULL DEFAULT 'Demande générale';
+Cela permet à un utilisateur d’envoyer plusieurs messages avec le même courriel, mais avec des sujets différents, évitant ainsi les doublons inutiles tout en répondant à ses besoins.
+
+Où faire ça ?
+Dans phpMyAdmin : Comme expliqué, utilise l’interface graphique ou les requêtes SQL dans l’onglet "SQL".
+Dans ton code backend : Si tu as un script (PHP, Node.js, etc.) pour insérer les données, gère l’erreur 1062 pour afficher un message utilisateur et proposer de modifier l’email ou le sujet.

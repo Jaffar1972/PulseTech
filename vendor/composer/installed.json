@@ -3605,10 +3605,7 @@
         "phpunit/php-text-template",
         "phpunit/php-timer",
         "phpunit/phpunit",
-        "psr/cache",
         "psr/clock",
-        "psr/container",
-        "psr/event-dispatcher",
         "psr/http-message",
         "psr/link",
         "psr/log",
@@ -3628,17 +3625,13 @@
         "sebastian/type",
         "sebastian/version",
         "staabm/side-effects-detector",
-        "symfony/contracts",
-        "symfony/polyfill-ctype",
         "symfony/polyfill-intl-grapheme",
         "symfony/polyfill-intl-icu",
         "symfony/polyfill-intl-idn",
         "symfony/polyfill-intl-normalizer",
-        "symfony/polyfill-mbstring",
         "symfony/polyfill-php83",
         "symfony/polyfill-uuid",
         "symfony/symfony",
-        "theseer/tokenizer",
-        "twig/twig"
+        "theseer/tokenizer"
     ]
 }

@@ -12,8 +12,21 @@ body {
     position: relative; 
     margin: 0;
     padding: 0;
-    font-family: 'Kingsguard', Arial, sans-serif; 
+    font-family: 'Khiara', Arial, sans-serif; 
 }
+
+/* CSS pour le footer */
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+       
 
 #chat {
     position: fixed;
@@ -177,11 +190,7 @@ nav ul li a:hover {
     font-display: swap;
 }
 
-@font-face {
-    font-family: "Kingsguard";
-    src: url("<?php echo SCRIPTS_fonts; ?>Kingsguard.otf") format("opentype");
-    font-display: swap;
-}
+
 
 @font-face {
     font-family: "OldLondon";
@@ -201,9 +210,7 @@ nav ul li a:hover {
     font-family: "OldLondon", "Times New Roman", serif;
 }
 
-.Kingsguard {
-    font-family: "Kingsguard", "Times New Roman", serif;
-}
+
 
 .Khiara {
     font-family: "Khiara", "Times New Roman", serif;
@@ -347,3 +354,6 @@ button:hover, input[type="submit"]:hover, input[type="text"]:hover, input[type="
     font-family: 'Kingsguard';
 }
 
+.content {
+            min-height: 90vh; /* Assure que le contenu prend au moins 90% de la hauteur de la fenêtre */
+        }

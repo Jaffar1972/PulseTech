@@ -70,7 +70,17 @@ if (isset($message)) {
 </table>
 </div>
 <button id="load-more" data-page="1" class="btn btn-primary my-3">Charger plus</button>
-
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3"><a href="/path/to/app_rgpd">&copy; Les mentions légales</a></div>
+                <div class="col-12 col-md-6 col-lg-3"><a href="/path/to/app_rgpd_cgu">Conditions générales d'utilisation</a></div>
+                <div class="col-12 col-md-6 col-lg-3"><a href="/path/to/app_contact">Politiques des Cookies</a></div>
+                <div class="col-12 col-md-6 col-lg-3"><a href="/path/to/app_contact">&hearts; Contact Moi</a></div>
+            </div>
+        </div>
+    </div>
 <script>
     $('#load-more').click(function() {
         var button = $(this);

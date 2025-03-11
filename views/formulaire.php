@@ -3,7 +3,7 @@
 $title = "formulaire";
 $actionUrl = "/Add/" . htmlspecialchars($entity, ENT_QUOTES, 'UTF-8'); // Valeur par défaut pour ajouter
 ?>
-<body>
+
 
 
 <div class="form-container-parent">
@@ -40,4 +40,14 @@ $actionUrl = "/Add/" . htmlspecialchars($entity, ENT_QUOTES, 'UTF-8'); // Valeur
         </form>
     </div>
     </div>
-</body>
+        <!-- Footer -->
+        <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3"><a href="/path/to/app_rgpd">&copy; Les mentions légales</a></div>
+                <div class="col-12 col-md-6 col-lg-3"><a href="/path/to/app_rgpd_cgu">Conditions générales d'utilisation</a></div>
+                <div class="col-12 col-md-6 col-lg-3"><a href="/path/to/app_contact">Politiques des Cookies</a></div>
+                <div class="col-12 col-md-6 col-lg-3"><a href="/path/to/app_contact">&hearts; Contact Moi</a></div>
+            </div>
+        </div>
+    </div>
